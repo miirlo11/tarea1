@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import ButtonCarga from "./ButtonCarga"
+import Animales from './Animales';
+import UseState from './UseState';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Ejercicio #1</h1>
+      <ButtonCarga cargando={true}/>
+      <ButtonCarga cargando={false}/>
+      <h1>Ejercicio #2</h1>
+      <Animales/>
+      <h1>Ejercicio #3</h1>
+      <UseState/>
     </div>
   );
 }
